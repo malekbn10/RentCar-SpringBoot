@@ -11,12 +11,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.projet.LocationVoiture.business.services.IOperationService;
 import com.projet.LocationVoiture.dao.entities.Client;
 import com.projet.LocationVoiture.dao.entities.Operation;
 import com.projet.LocationVoiture.web.models.requests.OperationForm;
-
+@RestController
+@RequestMapping("/operations")
 public class OperationController {
     @Autowired
     IOperationService operationService;

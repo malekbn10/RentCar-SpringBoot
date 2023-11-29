@@ -27,7 +27,7 @@ public class Operation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "dateDebut" ,nullable=false,unique = true)
+    @Column(name = "dateDebut" )
     @Temporal(TemporalType.DATE)
     private Date dateDebut;
 
