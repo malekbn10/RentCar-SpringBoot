@@ -25,7 +25,7 @@ public class ClientController {
     IClientService clientService;
 
     @GetMapping()
-    public ResponseEntity<Object> getAllVoiture() {
+    public ResponseEntity<Object> getAllClient() {
         return new ResponseEntity<>(this.clientService.getAllClient(), HttpStatus.OK);
     }
 
